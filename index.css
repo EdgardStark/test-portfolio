@@ -1,0 +1,311 @@
+/* Общие стили для аккордеона */
+.accordion {
+    position: absolute;
+    right: 0rem;
+    width: 100%;
+    top: 2rem;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для заголовка аккордеона */
+  .accordion-heading {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  .accordion-item-page-name{
+    text-align: right;
+    margin-bottom: -50px;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    padding-left: 35rem;
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+    margin: 0 0 0 60px; 
+  }
+  
+  /* Стили для кнопки Toggle All */
+  .toggle-all-btn {
+    position: fixed;
+    display: block;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    right: 10px;
+  }
+  
+  /* Стили для содержимого аккордеона 
+  .accordion-content {
+    padding: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Стили для изображений 
+  .image-acardeon1 {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  .image-acardeon2 {
+    max-width: 10%;
+    aspect-ratio: 1/1;
+  
+  }
+  .image-acardeon3 {
+    max-width: 10%;
+    aspect-ratio: 1/1;
+
+  }
+  .image-acardeon4 {
+    max-width: 10%;
+    aspect-ratio: 1/1;
+    
+  }
+  
+  /* Стили для ссылок 
+  .a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .a:hover {
+    text-decoration: underline;
+  }
+  */
+
+/* Стили для адаптивности 
+@media screen and (max-width: 768px) {
+  .accordion-item {
+    flex-direction: column;
+  }
+
+  .accordion-item img {
+    margin: 10px 0;
+  }
+
+  .toggle-all-btn {
+    align-self: flex-start;
+  }
+
+  /* Адаптивные стили для фото image-acardeon1 
+  .image-acardeon1 {
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  /* Адаптивные стили для остальных фото 
+  .accordion-content .image-acardeon2,
+  .accordion-content .image-acardeon3,
+  .accordion-content .image-acardeon4 {
+    max-width: 100%;
+  }
+
+  /* Адаптивные стили для заголовка и кнопки 
+  .accordion-heading {
+    margin-right: 0;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+}
+*/
+
+/* Общие стили для блока */
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стили для каждого аккордеона */
+.accordion-item {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+/* Стили для контента внутри аккордеона */
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Стили для заголовка внутри аккордеона */
+.accordion-item-page-name {
+
+  text-align: right;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  font-weight: bold;
+  user-select: none;
+  /* margin-left: auto; */
+  margin-right: 20px; /* Отступ справа от фото */
+  margin-top: 30px; /* Отступ сверху от фото */
+  margin-bottom: 10px; /* Отступ снизу от фото */
+}
+
+.button-read-more{
+
+  max-width: 10%;
+  height: auto;
+  display: block;
+  font-weight: bold;
+  user-select: none;
+}
+
+.accordion-content-dev{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* Стили для кнопки Toggle All */
+.toggle-all-btn {
+  margin-top: 10px;
+}
+
+/* Стили для фото image-acardeon1 */
+.image-acardeon1 {
+  max-width: 50%; /* Ширина 50% */
+  align-self: flex-start; /* Выравнивание с левой стороны */
+}
+
+/* Стили для группы маленьких фото */
+.image-accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Отступ сверху от маленьких фото */
+  margin-bottom: 20px; /* Отступ снизу от маленьких фото */
+}
+
+/* Стили для остальных фото */
+.image-acardeon2,
+.image-acardeon3,
+.image-acardeon4 {
+  aspect-ratio: 1/1;
+  max-width: 10%; /* Ширина 10% */
+}
+
+/* Стили для кнопки Read More */
+/* .button-read-more {
+  text-align: center;
+} */
+
+/* Стили для адаптивности */
+@media screen and (max-width: 768px) {
+  .accordion-item {
+    flex-direction: column;
+  }
+
+  .accordion-item img {
+    margin: 10px 0;
+  }
+
+  .toggle-all-btn {
+    align-self: flex-start;
+  }
+
+  .image-accordion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Адаптивные стили для фото image-acardeon1 */
+  .image-acardeon1 {
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  /* Адаптивные стили для маленьких фото */
+  .image-acardeon2,
+  .image-acardeon3,
+  .image-acardeon4 {
+    max-width: 100%;
+  }
+
+  /* Адаптивные стили для заголовка и кнопки */
+  .accordion-item-page-name {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  .button-read-more {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+
+
+.flex {
+  margin: 0;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+/* optional: alternately flips module layout 
+.flex:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+*/
+.flex div:first-child {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex:last-of-type div:first-child {
+  background-image: url("http://top.10.sites.warsawdentalcenter.pl/wp-content/uploads/2023/08/image-accordion-13.jpg");
+}
+.flex div:last-child {
+  margin: 2rem;
+  flex: 2;
+}
+.flex h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+.flex p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.flex p:last-of-type {
+  margin-bottom: 0;
+}
+.column {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+}
